@@ -1,3 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/lab-integration
+    username: devuser
+    password: secret
+    driverClassName: org.postgresql.Driver
+    maxActive: 10
+    maxIdle: 5
+    minIdle: 2
+    initialSize: 5
+    removeAbandoned: true
+
+flyway:
+  placeholders:
+    dbuser: ${spring.datasource.username}
+
 ftp:
   root: /lab_its_dir/uploads/test
   host:
@@ -6,3 +22,9 @@ ftp:
   user:
     name: lab_its
     password: kTmLQKjHdxg8nPwf
+
+recipient:
+  issuer: 3MVG91ftikjGaMd8BnzZAjplU_WBRSuWhLVfhLVHDfCABRzAZqpnJLFLGSkhgGrP40.ht0vwmr2d9wxVkb4I9
+  subject: v1kal@b1icix.com
+  audience: https://login.salesforce.com
+  namespace: vikaLab1

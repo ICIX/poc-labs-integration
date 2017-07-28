@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import java.io.IOException;
 import java.util.Properties;
 
 @Slf4j
@@ -36,7 +35,7 @@ public class FtpClient {
         this.password = password;
         this.objectMapper = objectMapper;
     }
-    public void apply(FtpHandler handler) throws SftpException, JSchException, IOException {
+    public void apply(FtpHandler handler) throws Exception {
 
         log.info("[x]Creating sFTP session");
         JSch jsch = new JSch();

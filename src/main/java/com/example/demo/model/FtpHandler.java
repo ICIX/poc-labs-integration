@@ -7,6 +7,6 @@ import com.jcraft.jsch.SftpException;
 import java.io.IOException;
 
 public interface FtpHandler {
-    void doWork(ChannelSftp channel) throws SftpException, IOException;
+    void doWork(ChannelSftp channel) throws Exception;
     String remoteDirectory();
 }
