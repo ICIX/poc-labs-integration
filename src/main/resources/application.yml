@@ -25,6 +25,6 @@ ftp:
 
 recipient:
   issuer: 3MVG91ftikjGaMd8BnzZAjplU_WBRSuWhLVfhLVHDfCABRzAZqpnJLFLGSkhgGrP40.ht0vwmr2d9wxVkb4I9
-  subject: v1kal@b1icix.com
+  subject: jmmlab01@stg.pm
   audience: https://login.salesforce.com
-  namespace: vikaLab1
+  namespace: PMHPLAB01
